@@ -1,0 +1,298 @@
+@import './Vendor/roboto-fontface/css/roboto/roboto-fontface.css';
+
+.App
+{
+  text-align: left;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App-logo
+{
+  height: 80px;
+}
+
+.App-header
+{
+  padding: 0px 20px;
+  color: white;
+  background-color: #ffffff;
+}
+
+.App-intro
+{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #F8F8F8;
+  font-size: large;
+  margin: 0px auto;
+  text-align: center;
+  min-height: calc(100vh - 236px); /*shame! ding!*/
+}
+
+.content
+{
+  background-color: #F8F8F8;
+  flex: 1;
+}
+
+.navigation {
+  display: block;
+  background-color: #ffffff;
+  border-bottom: 1px solid #E9E9E9;
+  list-style: none;
+  margin: 0px;
+}
+
+.navigation .navigation-link
+{
+  display: inline-block;
+}
+
+.navigation .navigation-link
+{
+  height: 26px;
+  padding-right: 20px;
+}
+.navigation .navigation-link a
+{
+  color: #8E8E8E;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 5px;
+  height: 26px;;
+}
+
+.navigation .navigation-link a:hover, .navigation .navigation-link a.active
+{
+  color: #FF7726;
+}
+
+.navigation .navigation-link a.active
+{
+  border-bottom: 2px solid #FF7726;
+}
+
+.tile
+{
+  background-color: #ffffff;
+  flex: 1;
+  max-width: 250px;
+  border: 2px solid #E9E9E9;
+  margin: 10px 10px;
+  text-align: left;
+}
+
+.tile .tile-content
+{
+  color: #686868;
+  font-family: 'Roboto-Light', sans-serif;
+  padding: 10px 25px;
+}
+
+.tile .tile-content h2
+{
+  margin: 0px;
+  font-size: 14pt;
+}
+
+.tile .tile-content p
+{
+  padding-top: 10px;
+  margin: 0px;
+  font-size: 11pt;
+}
+.tile-img
+{
+    width: 250px;
+
+}
+
+.tile.cam
+{
+  max-width: 450px;
+  min-width: 300px;
+  flex-grow: 1;
+}
+
+.tile.cam .tile-content
+{
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.tile.cam .tile-content h2
+{
+  font-size: 16pt;
+  maring: 0px;
+}
+
+.tile.cam .date
+{
+  padding: 0px;
+  color: #B5B5B5;
+  margin: 10px 10px 0px 0px;
+  font-size: 10pt;
+  text-align: right;
+}
+
+.tile.cam .cam-image
+{
+  width: 100%;
+  display: block;
+}
+
+.form-container
+{
+  background-color: #ffffff;
+  border: 2px solid #E9E9E9;
+  min-width: 300px;
+  max-width: 400px;
+  flex: 1;
+  padding: 50px 10px;
+
+}
+.form-container form
+{
+  text-align: left;
+  max-width: 300px;
+  margin: 0px auto;
+}
+
+.form-container p
+{
+  color: #b5b5b5;
+  padding: 0px;
+  border-bottom: 1px solid #B5B5B5;
+}
+
+.input-field
+{
+  position: relative;
+  display: inline-block;
+}
+
+.input-field input
+{
+  font-family: 'Roboto', sans-serif;
+  width: 285px;
+  padding: 7px 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #B5B5B5;
+  margin: 10px;
+}
+
+.input-field > label
+{
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  margin-top: -0.5em;
+  opacity: 0.5;
+  display: none;
+}
+
+.input-field > textarea {
+    font-family: 'Roboto', sans-serif;
+    height: 150px;
+    width: 285px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B5B5B5;
+    margin-left: 7px;
+}
+
+.input-field > textarea:placeholder-shown + label,
+.input-field > input[type=text]:placeholder-shown + label
+{
+  display: block;
+}
+
+.input-field input:required +label::after
+{
+  font-family: 'Roboto', sans-serif;
+  content: "*";
+  color: red;
+}
+
+.input-field > label > span
+{
+  letter-spacing: -2px;
+}
+
+.form-container button
+{
+  font-family: 'Roboto', sans-serif;
+  background-color: #2196F3;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  width: 70px;
+  margin-top: 20px;
+  float: right;
+  text-transform: uppercase;
+  color: #ffffff;
+  box-shadow: 1px 1px 2px #CCCCCC;
+}
+
+.error
+{
+  color: red;
+  font-size: 10pt;
+  padding: 0px 10px;
+}
+
+footer
+{
+  height: 85px;
+  background-color: #282828;
+  text-align:center;
+}
+
+.App-footer
+{
+  color: #7D7D7D;
+  padding-top: 30px;
+}
+
+.App-footer hr
+{
+  max-width: 300px;
+  border: 1px solid #484848;
+  margin: 0px auto;
+
+}
+
+.App-footer p
+{
+  font-size: 10pt;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.loader img
+{
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes spin {
+ from {
+   transform: rotate(0deg);
+ } to {
+   transform: rotate(360deg);
+ }
+}
